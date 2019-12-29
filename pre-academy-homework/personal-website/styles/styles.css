@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins|Crimson+Text&display=swap');
-
 html {
     font-size: 10px;
 }
@@ -14,7 +13,7 @@ body {
 h1 {
     font-family: 'Crimson Text', serif;
     font-size: 6.4rem;
-    color: #1fab89; 
+    color: #1fab89;
     font-weight: normal;
 }
 
@@ -47,7 +46,7 @@ hr {
     margin: 50px auto;
     clear: both;
 }
-  
+
 .top-container {
     background-color: #EAF9F5;
     position: relative;
@@ -56,7 +55,7 @@ hr {
 }
 
 #profile-image {
-    width: 250px;
+    width: 300px;
     max-width: 100%;
     height: auto;
     border-radius: 50%;
@@ -66,11 +65,12 @@ hr {
     width: 65%;
     margin: auto;
 }
+
 .middle-container {
     padding: 50px 0;
     text-align: center;
 }
-  
+
 .interests-grid {
     width: 75%;
     margin: 50px auto 75px auto;
@@ -91,7 +91,7 @@ hr {
 }
 
 table {
-    text-align: left;
+    text-align: center;
     color: #40514E;
     margin-top: 25px;
     margin-left: auto;
@@ -118,7 +118,9 @@ th {
 }
 
 .cultures-img {
-    float: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 200px;
     max-width: 100%;
 }
@@ -130,6 +132,11 @@ th {
     width: 450px;
     max-width: 90%;
 }
+
+.learning-table {
+    border-spacing: 50px 50px;
+}
+
 .bottom-container {
     background-color: #EAF9F5;
     padding: 10px 0 10px;
@@ -137,18 +144,19 @@ th {
 
 .follow-title {
     color: #1fab89;
-
 }
+
 .footer-link {
     color: #62d2a2;
     margin: 10px 20px;
-  }
+}
+
 .footer-link:hover {
     color: #1fab89;
-  }
+}
 
-  .copyright {
+.copyright {
     color: #1fab89;
     font-size: 1.2rem;
     padding-top: 20px;
-  }
+}
