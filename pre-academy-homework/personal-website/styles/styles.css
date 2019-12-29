@@ -45,6 +45,7 @@ hr {
     border-bottom: none;
     width: 4%;
     margin: 50px auto;
+    clear: both;
 }
   
 .top-container {
@@ -96,6 +97,7 @@ table {
     margin-left: auto;
     margin-right: auto;
     border-spacing: 50px 10px;
+    max-width: 100%;
 }
 
 th {
@@ -126,7 +128,7 @@ th {
     margin-left: auto;
     margin-right: auto;
     width: 450px;
-    max-width: 100%;
+    max-width: 90%;
 }
 .bottom-container {
     background-color: #EAF9F5;
