@@ -1,3 +1,29 @@
+function doesNotPassAllValidations(name, msg) {
+    if (!name && !msg) {
+        alert('You forgot to fill in your name and message!')
+        return true
+    }
+
+    if (!name) {
+        alert('You forgot to fill in your name')
+        return true
+    }
+
+    if (name )
+
+    if (!msg) {
+        alert('You forgot to fill in your message')
+        return true
+    }
+
+    if (msg.length > 280) {
+        alert('Your comment is too long')
+        return true
+    }
+
+    return false
+}
+
 function submitComment() {
     const inputField = document.getElementById('name')
     const name = inputField.value
@@ -19,9 +45,15 @@ function submitComment() {
 
     console.log(commentSection)
 
-    commentSection.appendChild(comment)
+    console.log('name test:', name)
+    console.log('msg test:', msg)
+
+    if(doesNotPassAllValidations(name, msg)) {
+        return null
+    }
 
     inputField.value = null
-    textArea.value = null
-    
+    inputField2.value = null
+
+    commentSection.appendChild(comment)
 }
