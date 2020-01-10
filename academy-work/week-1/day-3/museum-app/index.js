@@ -326,11 +326,15 @@ const data = {
 
 const paintings = data.artObjects
 
+
 for (let i=0; i < paintings.length; i++) {
   
-  
-  
   function displayPainting(painting) {
+    const year = paintings[i].longTitle.slice(-4)
+    console.log(year)
+     if (paintings[i].webImage.width > 1500 
+      && paintings[i].principalOrFirstMaker !== "Gerard van Honthorst" 
+      && year <= 1800) {
     const img = document.createElement('img')
     const a = document.createElement('a')
     const url = paintings[i].webImage.url
@@ -342,7 +346,7 @@ for (let i=0; i < paintings.length; i++) {
 
     a.appendChild(img)
     gallery.appendChild(a)
-
+    }
   }
   const currentPainting = paintings[i]
 
