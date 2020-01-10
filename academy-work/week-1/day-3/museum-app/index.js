@@ -330,7 +330,7 @@ const paintings = data.artObjects
 for (let i=0; i < paintings.length; i++) {
   
   function displayPainting(painting) {
-    const year = paintings[i].longTitle.slice(-4)
+    const year = paintings[i].longTitle.match(/\d{4}/g)
     console.log(year)
      if (paintings[i].webImage.width > 1500 
       && paintings[i].principalOrFirstMaker !== "Gerard van Honthorst" 
