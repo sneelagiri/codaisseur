@@ -7,6 +7,45 @@
     <title>Text converter</title>
 </head>
 <body>
+    <h1>Text Converter</h1>
+
+    <h1 id="heading" class="subtitle">Convert your text here</h1>
+    <form>
+        <input type="text" />
+        <button>Convert</button>
+    </form>
     
+    <script>
+        console.log('hello')
+        console.log(document) //only works in browsers
+
+        // 1. find the element 
+        const h1 = document.querySelector('#heading')
+
+        const subtitle = document.querySelector('h1.subtitle')
+
+        const button = document.querySelector('button')
+        console.log('button test:', button)
+
+        button.addEventListener(
+            'click',
+            (event) => {
+                event.preventDefault()
+                console.log('event test', event)
+                console.log('I was clicked')
+         
+
+        // 2. extract content   
+        const text = subtitle.innerText
+        console.log('text test:', test)
+
+        // 3. modify the content
+        const lower = text.toLowerCase()
+
+        // 4. modify the element
+        subtitle.textContent = lower
+            }
+        )
+    </script>
 </body>
 </html>

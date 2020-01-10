@@ -335,17 +335,17 @@ for (let i=0; i < paintings.length; i++) {
      if (paintings[i].webImage.width > 1500 
       && paintings[i].principalOrFirstMaker !== "Gerard van Honthorst" 
       && year <= 1800) {
-    const img = document.createElement('img')
-    const a = document.createElement('a')
-    const url = paintings[i].webImage.url
-    const imgTitle = paintings[i].title
-    a.setAttribute("href", "./pages/detail-page.html")
-    img.setAttribute("alt", imgTitle)
-    img.setAttribute("class", "artObject")
-    img.setAttribute("src", url)
+      const img = document.createElement('img')
+      const a = document.createElement('a')
+      const url = paintings[i].webImage.url
+      const imgTitle = paintings[i].title
+      a.setAttribute("href", "./pages/detail-page.html")
+      img.setAttribute("alt", imgTitle)
+      img.setAttribute("class", "artObject")
+      img.setAttribute("src", url)
 
-    a.appendChild(img)
-    gallery.appendChild(a)
+      a.appendChild(img)
+      gallery.appendChild(a)
     }
   }
   const currentPainting = paintings[i]
