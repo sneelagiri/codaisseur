@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Permanent+Marker&display=swap');
+
+html {
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Ibarra Real Nova', serif;
+    background-color: #fcf9ea;
+    color: brown;
+}
+
+.pageTitle {
+    font-size: 4.0rem;
+    font-family: 'Permanent Marker', cursive;
+    color: brown;
+}
+
+.navBar {
+    font-size: 1.6rem;
+    padding-bottom: 20px;
+}
+
+.navItem {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: crimson;
+}
+
+.articleTitle {
+    font-size: 3.2rem;
+    color: brown;
+}
+
+.dinoTitle {
+    font-size: 2.4rem;
+    color: brown;
+}
+
+body {
+    font-size: 1.6rem;
+}
