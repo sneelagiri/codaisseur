@@ -9,8 +9,6 @@ function doesNotPassAllValidations(name, msg) {
         return true
     }
 
-    if (name )
-
     if (!msg) {
         alert('You forgot to fill in your message')
         return true
@@ -27,6 +25,8 @@ function doesNotPassAllValidations(name, msg) {
 }
 
 function submitComment() {
+    event.preventDefault();
+
     const inputField = document.getElementById('name')
     const name = inputField.value
     const inputField2 = document.getElementById('msg')

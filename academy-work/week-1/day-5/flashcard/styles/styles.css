@@ -13,5 +13,8 @@ body {
   width: 50%;
   height: 60%;
   background-color: white;
+  border-style: solid;
+  border: blue;
+  border-radius: 16px;
 }
 
