@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <p>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -16,9 +16,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Hello World!
         </a>
-      </header>
+        <br></br>
+        I feel very positive about JavaScript and React. I think that they can be used efficiently to solve real-world problems, which businesses across the world face. 
+      </p>
     </div>
   );
 }
