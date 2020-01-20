@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Advice For Free!</title>
+</head>
+<body>
+  <h1>Get Good Advice For Free!</h1>
+  <div id="random-advice"></div>
+  <button onclick=(getData())>Get better advice!</button>
+  <br>
+  <br>
+  <form id="search-form" onsubmit="adviceSearch();return false">
+    <div class="search-advice">
+      <label for="entering-advice">Search for advice:</label>
+      <input type="text" name="query" id="adviceQuery">
+    </div>
+    <br>
+    <div id="searchBtn">
+      <button id="btn">Search</button>
+    </div>
+  </form>
+  <div id="search-results-number"></div>
+  <div id="search-results"></div>
+  <script>
+    // random advice on arrival & click-to-get-advice functionality
+    async function getData() {
+      try {
+        const first = await fetch("https://api.adviceslip.com/advice")
+        .then(response => response.json())
+          .then( myJson=> {
+            document.getElementById("random-advice").innerHTML = 
+            "<p>" + JSON.stringify(myJson.slip.advice, null, " ") + "</p>"
+          })
+      } 
+      catch (error) {
+        console.log(error);
+      }
+    }
+    getData()
+
+    // search for advice
+    const apiSearch = "https://api.adviceslip.com/advice/search/" 
+
+    async function adviceSearch() {
+      const searchData = document.getElementById('adviceQuery').value
+      searchURL= apiSearch + searchData
+      document.getElementById("search-results").innerHTML = ""
+      document.getElementById("search-results-number").innerHTML = ""
+      try {
+        const searchQuery = await fetch(searchURL)
+        .then(response => response.json())
+          .then( myJson => {
+            document.getElementById("search-results-number").innerHTML = "<p>" + "Total Results: " + JSON.stringify(parseInt(myJson.total_results)) + "</p>"
+            for (let i = 0; i < parseInt(myJson.total_results); i++) {
+              let o = i + 1 
+              const div = document.getElementById("search-results")
+              let para = document.createElement("DIV")
+              div.appendChild(para)
+              para.innerHTML = "<p>" + o + ".) " + JSON.stringify(myJson.slips[i].advice) + "</p>"
+            }
+          })
+      } 
+      catch (error) {
+        console.log(error);
+      } 
+      return false;
+    }
+  </script>
+</body>
+</html>

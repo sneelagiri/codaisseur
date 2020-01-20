@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fetch Test</title>
+</head>
+<body>
+  <h1>Star Wars API Testing</h1>
+  <button onclick="getPerson()">Click Me!</button>
+  <script>
+    function getPerson() {
+      fetch("https://swapi.co/api/people/2/") // make the request
+        .then(response => response.json()) // convert response to json
+        .then(myJson => { // display data in the browser
+          document.body.innerHTML =
+            "<pre>" + JSON.stringify(myJson, null, " ") + "</pre>"
+        })
+    }
+  </script>
+</body>
+</html>
