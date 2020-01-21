@@ -1,0 +1,7 @@
+Day 1 exercises: 
+
+Made two separate repositories and worked on react apps: 
+1. my-first-react-app
+2. my-second-react-app
+
+Started collaborating with Robin on a third react app which is basically a web feed of GitHub Jobs.
