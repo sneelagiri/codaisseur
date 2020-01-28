@@ -5,12 +5,24 @@ export default class CocktailsList extends Component {
   renderCocktailCategory(category) {
     return (
       <li key={category}>
-        <Link to={`/cocktail-categories/${category}`}>{category}</Link>
+        <Link to={`/cocktails-categories/${encodeURIComponent(category)}`}>
+          {category}
+        </Link>
       </li>
     );
   }
 
   render() {
-    return <div></div>;
+    "";
+    const { cocktailCategories } = this.props;
+    return (
+      <div className="cocktails-list">
+        <h1>Cocktail Categories</h1>
+        {!cocktailCategories && "Loading..."}
+        {cocktailCategories && (
+          <ul>{cocktailCategories.map(this.renderCocktailCategory)}</ul>
+        )}
+      </div>
+    );
   }
 }

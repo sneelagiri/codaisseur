@@ -1,0 +1,7 @@
+Differences between State and Properties: 
+
+1. State renders content dynamically, props does not (wrong)
+
+2. State can be set but props are read-only 
+
+3. 
