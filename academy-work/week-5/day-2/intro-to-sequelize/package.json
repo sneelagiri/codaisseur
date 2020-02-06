@@ -1,0 +1,17 @@
+{
+  "name": "day-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node": "^13.7.0",
+    "pg": "^7.18.1",
+    "sequelize": "^5.21.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

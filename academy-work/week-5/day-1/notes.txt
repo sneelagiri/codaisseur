@@ -1,0 +1,10 @@
+Normalization 
+Take for example a players table.
+First Names and Last names would go in one table
+Team Color, City, Coaches, and Ratings would go in an another table. 
+
+All values in the second table would be associated with teams and all values in the first table would be linked to the players.
+
+What if a player is in two teams?
+1. In a third table, we can have players, team ID One, team ID Two, and we can match based on that. 
+
