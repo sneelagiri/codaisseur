@@ -1,0 +1,1 @@
+Made back-end and front-end for imageboard. See repositories: image-board-server and image-board-client
