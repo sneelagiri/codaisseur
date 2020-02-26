@@ -1,0 +1,16 @@
+{
+  "name": "typescript-play",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/hello.js",
+  "scripts": {
+    "compile": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
