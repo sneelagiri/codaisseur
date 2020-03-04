@@ -1,0 +1,3 @@
+Made a game with Nicole Kuong over a span of 5 days.
+Refer to https://github.com/sneelagiri/game-app-client for the client
+Refer to https://github.com/sneelagiri/game-app-server for the server

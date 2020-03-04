@@ -1,0 +1,2 @@
+This week was final assessment week. We spent 5 days making an app according to the specificiations set by the teachers at Codaisseur. This app will be uploaded as a separate git repository soon. 
+
